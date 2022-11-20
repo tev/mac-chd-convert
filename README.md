@@ -2,6 +2,8 @@
 Short script to convert .7z files to .chd  
   
 I had some issues with python dependencies using https://github.com/nickheyer/CHDconvert, so I made a shell script that does about the same thing.  
+Files must be compressed as .7z or .zip  
+Supported disc image formats: cue, iso, gdi  
   
 ## Setup
 This requires 7z and chman. If you don't have them installed, do that with:  
