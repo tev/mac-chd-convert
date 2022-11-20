@@ -22,13 +22,13 @@ else
 fi
 
 printf "[ Scanning $inputPath ... ]"
-for file in $1/*.7z(.)
+for file in $1/**/*.(7z|zip)(.)
 do
   filename=$file:t
   printf "\n\n\n[ Processing ${filename} ]"
   7z x $file -o$tempDir
-  for i in $tempDir/*.cue(.); do chdman createcd -i "$i" -o "${i%.*}.chd"; done
-  mv $tempDir/*.chd(.) $outDir
+  for i in $tempDir/**/*.(cue|iso|gdi)(.); do chdman createcd -i "$i" -o "${i%.*}.chd"; done
+  mv $tempDir/**/*.chd(.) $outDir
   rm -rf $tempDir/*
 done
 rm -rf $tempDir
