@@ -16,7 +16,7 @@ cd to the place you put the script
 Give this script permissions with   
 `chmod u+x mac-chd-convert.sh`  
 
-Set up your target directory, it should be a directory of .7z files that contain .cue files.  
+Set up your target directory, it should be a directory of .7z or .zip files that contain .cue, .iso or .gdi files.  
 Run the script using an absolute path to your target directory, no ~ shortcut.  
   
 `./mac-chd-convert.sh /Users/myname/Downloads/DiscImages`  
