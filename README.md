@@ -9,7 +9,8 @@ This requires 7z and chman. If you don't have them installed, do that with:
 `brew install rom-tools`  
   
 Put this script somewhere  
-CD to that somewhere  
+In the terminal:
+cd to the place you put the script  
 Give this script permissions with   
 `chmod u+x mac-chd-convert.sh`  
 
